@@ -1,6 +1,6 @@
 {
-    "short_name": "Installable App",
-    "name": "Simple Installable App",
+    "short_name": "web PWA",
+    "name": "Web PWA",
     "icons": [
         {
             "src": "img/favicon-32x32.png",
