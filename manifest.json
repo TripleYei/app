@@ -1,0 +1,21 @@
+{
+    "short_name": "Installable App",
+    "name": "Simple Installable App",
+    "icons": [
+        {
+            "src": "img/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        
+        {
+            "src": "img/logo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

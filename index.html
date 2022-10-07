@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APP</title>
+	<meta charset="utf-8">
+	<link rel="manifest" href="mainfest.json" />
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+
+
+<script>
+    if('serviceWorker' in navigator) {
+        window.addEventListiner('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then((registration) => { 
+                    console.log(`service worker registered succesfully ${registration}`) 
+                })
+                .catch((err) => {
+                    console.log(`Error registring ${err}`) 
+                })
+        })
+    } else {
+        console.log(`Service worker is not supported in this browser.`)
+    }
+</script>
+
+</body>
+</html>
